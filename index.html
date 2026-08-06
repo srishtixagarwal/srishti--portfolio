@@ -6,6 +6,11 @@
     <meta name="description" content="The research, analytics, and economics portfolio of Srishti Agarwal." />
     <title>Srishti Agarwal | Research &amp; Analytics Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .portrait-photo{position:relative;width:100%;aspect-ratio:4/5;min-height:390px;display:block;object-fit:cover;object-position:52% 43%;border:1px solid rgba(105,216,255,.38);border-radius:34px;background:#0a1728;box-shadow:0 35px 90px rgba(0,0,0,.45)}
+      .project-card{display:flex;flex-direction:column}.project-cover{width:100%;aspect-ratio:16/9;display:block;object-fit:cover;object-position:center;border-bottom:1px solid var(--line);background:#07111f}.project-cover.contain{object-fit:contain;padding:.7rem;background:linear-gradient(145deg,#0c2635,#091420)}.project-copy{display:flex;flex:1;flex-direction:column}.project-link{align-items:center;margin-top:auto;padding-top:1.25rem;color:var(--cyan)}.project-link:hover{color:var(--text)}
+      @media(max-width:640px){.portrait-photo{min-height:360px}}
+    </style>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -42,12 +47,9 @@
               </div>
             </div>
 
-            <div class="portrait-frame" aria-label="Profile photo placeholder">
+            <div class="portrait-frame">
               <div class="portrait-glow"></div>
-              <div class="portrait-placeholder">
-                <span>SA</span>
-                <p>Your portrait will go here</p>
-              </div>
+              <img class="portrait-photo" src="assets/profile.jpg" alt="Srishti Agarwal in her UBC graduation robes" />
               <div class="portrait-caption"><span class="status-dot"></span>Based in Vancouver</div>
             </div>
           </div>
@@ -62,25 +64,25 @@
         <section id="projects" class="panel">
           <header class="section-heading">
             <span class="section-index">02</span>
-            <div><p class="eyebrow">Selected work</p><h2>Projects</h2><p class="section-description">A home for market research, analytics, dashboards, and academic work. Each card will link directly to the relevant project.</p></div>
+            <div><p class="eyebrow">Selected work</p><h2>Projects</h2><p class="section-description">Policy research, behavioural intervention design, multivariate analysis, and marketing analytics—each grounded in a clear decision question.</p></div>
           </header>
 
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-image cyan"><span>01</span><p>Project cover image</p></div>
-              <div class="project-copy"><p class="card-meta">Market research</p><h3>Project title</h3><p>A concise description of the question, your approach, and the value or finding will sit here.</p><span class="project-link">View project ↗</span></div>
+              <img class="project-cover contain" src="assets/projects/weekly-markets.jpg" alt="Cover of the Hafta Bazaar weekly markets research report" />
+              <div class="project-copy"><p class="card-meta">Policy research</p><h3>Formalising Delhi’s Weekly Markets</h3><p>Co-authored field research across four Delhi markets, combining vendor interviews and legal analysis to assess implementation gaps in the Street Vendors Act, 2014.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/india-weekly-markets-policy-research" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
-              <div class="project-image violet"><span>02</span><p>Project cover image</p></div>
-              <div class="project-copy"><p class="card-meta">Analytics</p><h3>Project title</h3><p>A concise description of the question, your approach, and the value or finding will sit here.</p><span class="project-link">View project ↗</span></div>
+              <img class="project-cover" src="assets/projects/provider-bias.jpg" alt="Cover of the provider bias and reproductive healthcare project" />
+              <div class="project-copy"><p class="card-meta">Behavioural intervention design</p><h3>Reducing Provider Bias in Reproductive Healthcare</h3><p>Designed a behavioural intervention and treatment-control evaluation to reduce marital-status bias among OB/GYN providers and improve equitable access to care.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/provider-bias-reproductive-healthcare" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
-              <div class="project-image blue"><span>03</span><p>Project cover image</p></div>
-              <div class="project-copy"><p class="card-meta">Research paper</p><h3>Project title</h3><p>A concise description of the question, your approach, and the value or finding will sit here.</p><span class="project-link">View project ↗</span></div>
+              <img class="project-cover" src="assets/projects/league-of-legends-pca.jpg" alt="Cover of the League of Legends principal component analysis project" />
+              <div class="project-copy"><p class="card-meta">Multivariate analysis</p><h3>League of Legends Early-Game Metrics Using PCA</h3><p>Applied PCA in SPSS and Python to reduce 23 early-game variables to nine interpretable components explaining 71.5% of total variance.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/league-of-legends-pca-analysis" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
-              <div class="project-image green"><span>04</span><p>Project cover image</p></div>
-              <div class="project-copy"><p class="card-meta">Dashboard</p><h3>Project title</h3><p>A concise description of the question, your approach, and the value or finding will sit here.</p><span class="project-link">View project ↗</span></div>
+              <img class="project-cover" src="assets/projects/pharmaceutical-marketing.jpg" alt="Cover of the pharmaceutical marketing effectiveness project" />
+              <div class="project-copy"><p class="card-meta">Marketing analytics</p><h3>Pharmaceutical Marketing Effectiveness</h3><p>Evaluated four physician-marketing programs using lift, crosstab, time-series, and clustering analysis, then translated six response segments into targeted recommendations.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/pharmaceutical-marketing-effectiveness" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
           </div>
         </section>

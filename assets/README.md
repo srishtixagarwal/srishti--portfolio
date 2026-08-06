@@ -1,3 +1,5 @@
 # Website images
 
-Project cover images and Srishti's portrait will be placed in this folder during the next content update.
+This folder contains the optimized profile photo and project cover images used by `index.html`.
+
+Keep the filenames and folder structure unchanged when uploading the website to GitHub.
