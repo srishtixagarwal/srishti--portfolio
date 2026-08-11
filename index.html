@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The research, analytics, and economics portfolio of Srishti Agarwal." />
+    <meta name="description" content="Srishti Agarwal’s portfolio in market research, business analysis, behavioural research, and data analytics." />
     <title>Srishti Agarwal | Research &amp; Analytics Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
       .portrait-photo{position:relative;width:100%;aspect-ratio:4/5;min-height:390px;display:block;object-fit:cover;object-position:52% 43%;border:1px solid rgba(105,216,255,.38);border-radius:34px;background:#0a1728;box-shadow:0 35px 90px rgba(0,0,0,.45)}
       .project-card{display:flex;flex-direction:column}.project-cover{width:100%;aspect-ratio:16/9;display:block;object-fit:cover;object-position:center;border-bottom:1px solid var(--line);background:#07111f}.project-cover.contain{object-fit:contain;padding:.7rem;background:linear-gradient(145deg,#0c2635,#091420)}.project-copy{display:flex;flex:1;flex-direction:column}.project-link{align-items:center;margin-top:auto;padding-top:1.25rem;color:var(--cyan)}.project-link:hover{color:var(--text)}
-      .experience-org{margin:.15rem 0 .8rem!important;color:#d9e7f8!important;font-size:.82rem!important;font-weight:700}.education-card,.skill-group{padding:1.6rem;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(15,32,53,.82),rgba(7,17,30,.95))}.education-card:last-child{grid-column:1/-1}.education-card h3,.skill-group h3{margin:.45rem 0;font-size:1.25rem;line-height:1.25}.degree-label{margin:0 0 1rem;color:#d9e7f8;font-size:.92rem}.coursework{margin:0;color:var(--muted);font-size:.86rem}.coursework span{display:block;margin-bottom:.25rem;color:var(--cyan);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.skill-tags{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}.skill-tags span{padding:.48rem .72rem;border:1px solid var(--line-strong);border-radius:999px;background:rgba(105,216,255,.045);color:#d9e7f8;font-size:.8rem}
-      @media(max-width:640px){.portrait-photo{min-height:360px}.education-card:last-child{grid-column:auto}}
+      .panel{min-height:auto;padding:clamp(3.5rem,6vw,5.5rem) clamp(2rem,7vw,7rem)}.hero-panel{justify-content:flex-start}.hero-grid{margin-top:0}.section-heading{margin-bottom:2.35rem}.project-heading h2{margin-top:0}.experience-org{margin:.15rem 0 .8rem!important;color:#d9e7f8!important;font-size:.82rem!important;font-weight:700}.education-grid{grid-template-columns:1fr}.education-card,.skill-group{padding:1.6rem;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(15,32,53,.82),rgba(7,17,30,.95))}.education-card h3,.skill-group h3{margin:.45rem 0;font-size:1.25rem;line-height:1.25}.degree-label{margin:0 0 1rem;color:#d9e7f8;font-size:.92rem}.coursework{margin:0;color:var(--muted);font-size:.86rem}.coursework span{display:block;margin-bottom:.25rem;color:var(--cyan);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.skill-group:last-child{grid-column:1/-1}.skill-tags{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.25rem}.skill-tags span{padding:.48rem .72rem;border:1px solid var(--line-strong);border-radius:999px;background:rgba(105,216,255,.045);color:#d9e7f8;font-size:.8rem}.site-footer{margin-top:4rem}
+      @media(max-width:980px){.panel{padding:6.5rem 1.4rem 3.75rem}}
+      @media(max-width:640px){.portrait-photo{min-height:360px}.skills-grid{grid-template-columns:1fr}.skill-group:last-child{grid-column:auto}}
     </style>
     <script src="script.js" defer></script>
   </head>
@@ -39,8 +40,7 @@
             <div class="hero-copy">
               <p class="intro-label">Hello, I’m</p>
               <h1>Srishti Agarwal</h1>
-              <p class="hero-lead">I turn complex business and policy questions into clear evidence, practical recommendations, and decision-ready stories.</p>
-              <p class="hero-body">MA Economics graduate from the University of British Columbia with a foundation in Statistics and experience across business analysis, market research, applied research, and data analytics.</p>
+              <p class="hero-body">I’m an MA Economics graduate from the University of British Columbia with a foundation in Statistics and Social Sciences. My experience spans market research, business analysis, behavioural research, and data analytics, where I’ve worked with both qualitative and quantitative data to solve practical problems. I enjoy breaking down complex questions, identifying meaningful patterns, and translating research and data into clear, actionable recommendations.</p>
               <div class="hero-actions">
                 <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
                 <a class="button secondary" href="mailto:srishti.112000@gmail.com">Get in touch</a>
@@ -55,27 +55,27 @@
         </section>
 
         <section id="projects" class="panel">
-          <header class="section-heading">
+          <header class="section-heading project-heading">
             <span class="section-index">02</span>
-            <div><p class="eyebrow">Selected work</p><h2>Projects</h2><p class="section-description">Policy research, behavioural intervention design, multivariate analysis, and marketing analytics—each grounded in a clear decision question.</p></div>
+            <div><h2>Projects</h2></div>
           </header>
 
           <div class="project-grid">
             <article class="project-card">
               <img class="project-cover contain" src="assets/projects/weekly-markets.jpg" alt="Cover of the Hafta Bazaar weekly markets research report" />
-              <div class="project-copy"><p class="card-meta">Policy research</p><h3>Formalising Delhi’s Weekly Markets</h3><p>Co-authored field research across four Delhi markets, combining vendor interviews and legal analysis to assess implementation gaps in the Street Vendors Act, 2014.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/india-weekly-markets-policy-research" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-copy"><p class="card-meta">Policy research</p><h3>Formalising Delhi’s Weekly Markets</h3><p>Conducted field research, stakeholder interviews, survey design, and policy analysis across Delhi, India's weekly markets to assess how the Street Vendors Act, 2014 was being implemented in practice. Identified gaps between policy and vendors’ lived experiences and contributed to a published research paper with recommendations.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/blob/main/india-weekly-markets-policy-research/india-weekly-markets-policy-research.pdf" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
               <img class="project-cover" src="assets/projects/provider-bias.jpg" alt="Cover of the provider bias and reproductive healthcare project" />
-              <div class="project-copy"><p class="card-meta">Behavioural intervention design</p><h3>Reducing Provider Bias in Reproductive Healthcare</h3><p>Designed a behavioural intervention and treatment-control evaluation to reduce marital-status bias among OB/GYN providers and improve equitable access to care.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/provider-bias-reproductive-healthcare" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-copy"><p class="card-meta">Behavioural intervention design</p><h3>Reducing Provider Bias in Reproductive Healthcare</h3><p>Designed a behavioural intervention and evaluation framework to address provider bias faced by unmarried women seeking reproductive healthcare. Used behavioural science, research design, treatment-control groups, and measurement planning to develop a practical approach for reducing bias and improving access to care.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/blob/main/provider-bias-reproductive-healthcare/provider-bias-reproductive-healthcare.pdf" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
               <img class="project-cover" src="assets/projects/league-of-legends-pca.jpg" alt="Cover of the League of Legends principal component analysis project" />
-              <div class="project-copy"><p class="card-meta">Multivariate analysis</p><h3>League of Legends Early-Game Metrics Using PCA</h3><p>Applied PCA in SPSS and Python to reduce 23 early-game variables to nine interpretable components explaining 71.5% of total variance.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/league-of-legends-pca-analysis" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-copy"><p class="card-meta">Multivariate analysis</p><h3>League of Legends Early-Game Metrics Using PCA</h3><p>Applied multivariate analysis and Principal Component Analysis (PCA) in SPSS and Python to simplify 23 early-game performance variables into 9 interpretable components. Used data visualization and statistical analysis to identify the metrics most useful for further analysis.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/blob/main/league-of-legends-pca-analysis/league-of-legends-pca-analysis.pdf" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
             <article class="project-card">
               <img class="project-cover" src="assets/projects/pharmaceutical-marketing.jpg" alt="Cover of the pharmaceutical marketing effectiveness project" />
-              <div class="project-copy"><p class="card-meta">Marketing analytics</p><h3>Pharmaceutical Marketing Effectiveness</h3><p>Evaluated four physician-marketing programs using lift, crosstab, time-series, and clustering analysis, then translated six response segments into targeted recommendations.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/tree/main/pharmaceutical-marketing-effectiveness" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+              <div class="project-copy"><p class="card-meta">Marketing analytics</p><h3>Pharmaceutical Marketing Effectiveness</h3><p>Analyzed physician prescribing patterns across four pharmaceutical marketing programs using Python and Excel, with lift analysis, crosstabs, time-series analysis, regression, and K-means clustering. Segmented physicians by response patterns and translated the findings into targeted regional and promotional recommendations.</p><a class="project-link" href="https://github.com/srishtixagarwal/portfolio--projects/blob/main/pharmaceutical-marketing-effectiveness%20%5C/pharmaceutical-marketing-effectiveness.pdf" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
             </article>
           </div>
         </section>
@@ -93,17 +93,18 @@
         <section id="education" class="panel">
           <header class="section-heading"><span class="section-index">04</span><div><p class="eyebrow">Academic foundation</p><h2>Education</h2><p class="section-description">An interdisciplinary foundation across economics, statistics, policy, and behavioural research.</p></div></header>
           <div class="education-grid">
-            <article class="education-card"><p class="card-meta">University of British Columbia</p><h3>Master of Arts in Economics</h3><p class="coursework"><span>Coursework</span>Econometrics, Research Design &amp; Policy Evaluation, Environmental Economics</p></article>
-            <article class="education-card"><p class="card-meta">Ashoka University</p><h3>Young India Fellowship</h3><p class="degree-label">Postgraduate Degree in Social Sciences</p><p class="coursework"><span>Coursework</span>Behavioural Economics, Public Policy, Design Thinking, Linguistics, Gender Studies</p></article>
             <article class="education-card"><p class="card-meta">Lady Shri Ram College for Women, University of Delhi</p><h3>Bachelor of Science (Honours) in Statistics</h3><p class="coursework"><span>Coursework</span>Survey Sampling, Multivariate Analysis, SPSS, R, Time Series, Design of Experiments</p></article>
+            <article class="education-card"><p class="card-meta">Ashoka University</p><h3>Young India Fellowship</h3><p class="degree-label">Postgraduate Diploma in Social Science</p><p class="coursework"><span>Coursework</span>Behavioural Economics, Public Policy, Design Thinking, Linguistics, Gender Studies</p></article>
+            <article class="education-card"><p class="card-meta">University of British Columbia</p><h3>Master of Arts in Economics</h3><p class="coursework"><span>Coursework</span>Econometrics, Research Design &amp; Policy Evaluation, Environmental Economics</p></article>
           </div>
         </section>
 
         <section id="skills" class="panel">
           <header class="section-heading"><span class="section-index">05</span><div><p class="eyebrow">Capabilities</p><h2>Skills</h2><p class="section-description">Research methods and analytical tools used across the projects and roles above.</p></div></header>
           <div class="skills-grid">
-            <article class="skill-group"><p class="card-meta">Research &amp; analysis</p><h3>Methods</h3><div class="skill-tags"><span>Primary Research</span><span>Secondary Research</span><span>Qualitative Data Analysis</span><span>Quantitative Data Analysis</span></div></article>
-            <article class="skill-group"><p class="card-meta">Analytics &amp; reporting</p><h3>Tools</h3><div class="skill-tags"><span>Microsoft Excel</span><span>Tableau</span><span>Power BI</span><span>SQL</span><span>R</span><span>SPSS</span><span>Python</span><span>Microsoft Word</span><span>Microsoft PowerPoint</span></div></article>
+            <article class="skill-group"><p class="card-meta">Research &amp; analysis</p><h3>Research &amp; Analysis</h3><div class="skill-tags"><span>Primary &amp; Secondary Research</span><span>Survey &amp; Questionnaire Design</span><span>Qualitative &amp; Quantitative Analysis</span><span>Stakeholder Interviews / In-Depth Interviews</span><span>Data Cleaning &amp; Validation</span><span>Statistical Analysis</span><span>Segmentation &amp; Clustering</span><span>Data Visualization &amp; Dashboarding</span><span>Literature Research</span><span>Policy &amp; Program Evaluation</span><span>Market &amp; Competitor Research</span><span>Insight Synthesis &amp; Recommendations</span></div></article>
+            <article class="skill-group"><p class="card-meta">Interpersonal &amp; professional</p><h3>Interpersonal &amp; Professional Skills</h3><div class="skill-tags"><span>Written &amp; Verbal Communication</span><span>Teamwork &amp; Collaboration</span><span>Stakeholder Communication</span><span>Attention to Detail</span><span>Curiosity &amp; Learner Mindset</span><span>Critical Thinking &amp; Problem Solving</span><span>Organization &amp; Time Management</span><span>Adaptability</span><span>Independent Initiative</span><span>Data Storytelling</span></div></article>
+            <article class="skill-group"><p class="card-meta">Software</p><h3>Tools</h3><div class="skill-tags"><span>Excel</span><span>PowerPoint</span><span>SPSS</span><span>R</span><span>Python</span><span>SQL</span><span>Power BI</span><span>Tableau</span><span>Stata</span></div></article>
           </div>
           <footer class="site-footer"><p>© <span id="year">2026</span> Srishti Agarwal</p><a href="#about">Back to top ↑</a></footer>
         </section>
